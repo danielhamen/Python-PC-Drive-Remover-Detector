@@ -2,9 +2,11 @@ import win32api
 import time
 from termcolor import colored
 
+# Function that will be ran once the Target drive is disconnected
 def onDisconnect():
     return (colored(f"Drive disconnected ", "red"))
 
+# Function that will be ran once the Target drive is connected (This will be run until the Iterations is finished)
 def onConnect():
     return (colored(f"Drive is connected ", "green"))
 
